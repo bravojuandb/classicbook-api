@@ -1,0 +1,9 @@
+
+# Python framework for building APIs quickly
+fastapi
+
+# Lightweight web server for running FastAPI
+uvicorn
+
+# Python library for making HTTP requests
+requests
