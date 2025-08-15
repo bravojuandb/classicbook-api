@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: classicbook-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATA_URL
+        value: https://raw.githubusercontent.com/bravojuandb/classicbook-datasets/main/data/aligned/book1_aligned.tsv
